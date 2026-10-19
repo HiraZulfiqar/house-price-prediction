@@ -115,6 +115,12 @@ House-Price-Prediction/
 - Explore feature engineering and hyperparameter tuning
 - Deploy the Streamlit application online
 
+## 🎬 Project Demo
+
+Watch the House Price Prediction application in action:
+
+[▶️ Watch the Demo Video on YouTube](https://youtu.be/dyy5xjyjBLs)
+
 ## 👩‍💻 Author
 
 **Hira Zulfiqar**
