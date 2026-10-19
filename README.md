@@ -1,26 +1,35 @@
-# House Price Prediction Using Machine Learning
+# 🏡 House Price Prediction Using Machine Learning
 
-## Project Overview
-This project uses machine learning to predict house prices based on property features such as area, number of bedrooms, bathrooms, stories, parking, and furnishing status.
+A machine learning project that predicts house prices based on property features, with an interactive Streamlit web application.
 
-The project includes data analysis, data preprocessing, model training, model evaluation, and a Streamlit web application for making predictions.
+## 📌 Project Overview
 
-## Dataset
-The dataset is stored in `data/Housing.csv`.
+This project includes data analysis, preprocessing, model training, evaluation, and an interactive web application called **Noir Estate | Property Valuation**.
 
-It contains 545 rows and 13 columns, including the target variable `price` and 12 property features.
+## ✨ Features
 
-## Machine Learning Models
-I trained and compared the following models:
+- Exploratory data analysis and preprocessing
+- Training and comparison of four regression models
+- Evaluation using MAE, RMSE, and R²
+- Saved model for predictions
+- Interactive Streamlit web application
+
+## 📊 Dataset
+
+- **File:** `data/Housing.csv`
+- **Records:** 545 rows
+- **Columns:** 13, including the target variable `price`
+
+## 🤖 Machine Learning Models
 
 - Linear Regression
 - Decision Tree Regressor
 - Random Forest Regressor
 - Tuned Random Forest Regressor
 
-Linear Regression achieved the best test-set performance among the models tested.
+**Best-performing model:** Linear Regression, based on the test-set results.
 
-## Evaluation Results
+## 📈 Model Evaluation
 
 | Model | MAE | RMSE | R² |
 |---|---:|---:|---:|
@@ -29,10 +38,27 @@ Linear Regression achieved the best test-set performance among the models tested
 | Random Forest | 1,026,432.1 | 1,403,563.8 | 0.610 |
 | Tuned Random Forest | 1,026,161.3 | 1,407,738.3 | 0.608 |
 
-## Web Application
-The project includes a Streamlit app called **Noir Estate | Property Valuation**. Users can enter property details and receive a price prediction from the saved machine learning model.
+Linear Regression achieved the lowest MAE and RMSE and the highest R² among the models tested.
 
-## Technologies Used
+## 🖥️ Application Screenshots
+
+### Home Page
+![Home Page](Screenshots/01-Home-Page.png)
+
+### House Details
+![House Details](Screenshots/02-House-Details.png)
+
+### Prediction Result
+![Prediction Result](Screenshots/03-Prediction-Result.png)
+
+### Model Comparison
+![Model Comparison](Screenshots/04-Model-Comparison.png)
+
+### Project Files
+![Project Files](Screenshots/05-Project-Files.png)
+
+## 🛠️ Technologies Used
+
 - Python
 - Pandas and NumPy
 - Scikit-learn
@@ -40,41 +66,61 @@ The project includes a Streamlit app called **Noir Estate | Property Valuation**
 - Streamlit
 - Joblib
 
-## How to Run the Project
+## 🚀 How to Run the Project
 
-1. Clone or download this repository.
-2. Open a terminal in the project folder.
-3. Install the required libraries:
+### 1. Clone the repository
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+git clone https://github.com/HiraZulfiqar/house-price-prediction.git
+cd house-price-prediction
+```
 
-4. Start the web application:
+### 2. Install dependencies
 
-   ```bash
-   python -m streamlit run app.py
-   ```
+```bash
+pip install -r requirements.txt
+```
 
-5. Open the local URL shown in the terminal.
+### 3. Run the application
 
-## Project Structure
+```bash
+python -m streamlit run app.py
+```
+
+Open the local URL shown in the terminal, usually `http://localhost:8501`.
+
+## 📁 Project Structure
 
 ```text
 House-Price-Prediction/
+├── data/
+│   └── Housing.csv
+├── Screenshots/
+│   ├── 01-Home-Page.png
+│   ├── 02-House-Details.png
+│   ├── 03-Prediction-Result.png
+│   ├── 04-Model-Comparison.png
+│   └── 05-Project-Files.png
 ├── app.py
 ├── main.py
 ├── house_price_model.pkl
 ├── requirements.txt
-├── README.md
-└── data/
-    └── Housing.csv
+├── .gitignore
+└── README.md
 ```
 
-## Future Improvements
-- Explore additional regression models.
-- Improve model performance through further experimentation.
-- Deploy the Streamlit app online.
+## 🔮 Future Improvements
 
-## Author
-Add your name and GitHub profile here.
+- Experiment with additional regression algorithms
+- Explore feature engineering and hyperparameter tuning
+- Deploy the Streamlit application online
+
+## 👩‍💻 Author
+
+**Hira Zulfiqar**
+
+[GitHub Profile](https://github.com/HiraZulfiqar)
+
+---
+
+*This project was developed as part of my machine learning learning journey, focusing on regression, model evaluation, and building an interactive ML application.*
